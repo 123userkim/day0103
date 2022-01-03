@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+window.onload = function(){
+	let hours = (new Date()).getHours();
+	let fname ="sun.png";
+	if(hours>=17){
+		fname = "night.png"
+	}
+	document.getElementById("result").src = fname;
+	
+}
+
+/*
+	window.onload =function(){
+		let today = new Date();
+		let hours = today.getHours();
+		if(hours < 17){
+			document.getElementById("result").src = 'sun.png';
+		}else{
+			document.getElementById("result").src = 'night.png';
+		}
+		 
+	}
+*/
+</script>
+</head> 
+<body>
+	<img  src="" id="result">
+	<!--아이디가 result인 것을 찾아서 .src하면 그림-->
+</body>
+</html>

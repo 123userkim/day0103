@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function pro() {
+		
+		let dan = Number(document.getElementById("dan").value);
+		let data ="";
+		data += `<h2>${dan}단</h2>`;
+		data +="<hr>";
+		
+		for(let i = 1 ;i<=9 ;i++){
+			data += `${dan}*${i}=${dan*i}<br>`;
+		}
+		document.getElementById("result").innerHTML=data;
+		
+		
+		
+		/*
+		for(let i=1; i<=9 ;i++){
+			
+			data =`num*i;		 
+			document.getElementById("result").innerHTML=num*i;
+			 
+		}
+		*/
+	}
+</script>
+</head>
+<body>
+	몇 단을 출력할까요?	<input type="text" id="dan">
+	<button onclick="pro()">확인</button>
+	<hr>
+ 	<div id="result"></div>
+</body>
+</html>

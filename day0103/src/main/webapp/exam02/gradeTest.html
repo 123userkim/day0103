@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function pro() {
+	let point = Number(	document.getElementById("point").value);
+	
+		if(point>=90){
+			document.getElementById("result").innerHTML="수";
+		}else if(point>=80){
+			document.getElementById("result").innerHTML="우";
+		}else if(point>=70){
+			document.getElementById("result").innerHTML="미";
+		}else if(point>=60){
+			document.getElementById("result").innerHTML="양";
+		}else{
+			document.getElementById("result").innerHTML="가";
+	}
+	}
+</script>
+</head>
+<body>
+	점수를 입력하시오 : 	<input type="text" id="point">
+	<button onclick="pro()">확인</button>
+	<hr>
+	결과 : <span id ="result"></span>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function findMax() {
+			let num1 = Number(document.getElementById("num1").value);
+			let num2 = Number(document.getElementById("num2").value);			
+			let result = num1;
+			if(num2 >result){
+				result = num2;
+			}
+			document.getElementById("result").innerHTML= result;
+		/*
+			if(num1>num2){
+				document.getElementById("result").innerHTML=num1;					
+			}else{					
+				document.getElementById("result").innerHTML=num2;					
+			}		
+		*/
+		}	
+</script>
+</head>
+<body> 
+	수1를 입력하시오 : 	<input type="text" id="num1"><br>
+	수2를 입력하시오 : 	<input type="text" id="num2"><br>
+	<button onclick="findMax()">큰 수 찾기</button><br>
+	<hr>
+	결과 : <span id="result"></span> 
+</body>
+</html>

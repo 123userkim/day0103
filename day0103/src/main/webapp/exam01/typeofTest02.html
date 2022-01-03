@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript">		
+		/*
+			function pro() {
+				
+			}
+		*/
+		
+		//pro라는 변수가 함수를 참조하게
+		var pro = function () {
+			
+			console.log("hello");
+		}
+		pro();
+		
+		var arr=[10,20,30];
+		console.log(arr[0]);
+		
+		var member = {name:"홍길동",age:20};
+		console.log(member.name);
+		console.log(member.age);
+		
+		var k;
+		
+		
+		console.log(typeof(pro));
+		console.log(typeof(arr)); //배열도 객체로 처리가 됨	
+		console.log(typeof(member));  
+		console.log(typeof(k));  
+	</script>
+</head>
+<body>
+
+</body>
+</html>

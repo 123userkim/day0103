@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id ="result"></div>
+
+	<script type="text/javascript">
+ 	//타이머를 이용해서 매번 시간 달라지게 함  	
+ 	//계속하여 기능을 동작시키고자 할 때	
+ 	//setInterval(,1000) : 1초마다 한 번씩 , 앞에 자리가 함수 1)미리 있는 함수 2)함수 만들기
+ 		setInterval (function () {
+ 			
+ 			let today = new Date();
+ 	 		let year = today.getFullYear();
+ 	 		let month= today.getMonth()+1;
+ 	 		let date = today.getDate();
+ 	 		let hours = today.getHours();
+ 	 		let minutes = today.getMinutes();
+ 	 		let seconds = today.getSeconds();
+ 	 	
+ 	 		let result =`${year}년 ${month}월 ${date}일 ${hours}시 ${minutes}분 ${seconds}초 `;
+ 	 		document.getElementById("result").innerHTML=result; 
+ 	 		
+		} ,1000); 
+ 	
+ 		
+ 		</script>
+</body>
+ 
+</html>
